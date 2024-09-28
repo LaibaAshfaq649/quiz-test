@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Number</title>
+    <link rel="stylesheet" href="style.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+<body style="background-color: hsla(318, 82%, 75%, 0.959);">
+    
+
+    <div class="container my-5 text-black">
+        <h1 class="fw-bolder text-center main-heading mt-3">Quiz Game</h1>
+
+        <div class="py-3" id="q1-hide">
+            <label for="mcqs1" class="form-label">1.What is the correct way to declare a variable in JavaScript??</label><br><br>
+            <input type="radio" id="option-a" name="mcqs1" value="a">
+            <label for="option-a">A) var myVar;</label> <br>
+            <input type="radio" id="option-b" name="mcqs1" value="b">
+            <label for="option-b">B) let myVar;</label> <br>
+            <input type="radio" id="option-c" name="mcqs1" value="c">
+            <label for="option-c">C) const myVar;</label> <br>
+            <input type="radio" id="option-d" name="mcqs1" value="d">
+            <label for="option-d">D) All of the above</label> <br>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="mcqs1();">Check Answer</button>
+        <br>
+    </div>
+
+
+    <div class="container my-5 text-black">
+    <div class="py-3 hide" id="q2-hide">
+        <label for="mcqs2" class="form-lebel"> 2.Which of the following is a valid JavaScript data type??<br>
+            <br> for (var i = 0; i < 5; i++) <br> { console.log(i); } </label><br><br>
+        <input type="radio" id="option-a" name="mcqs2" value="a">
+        <label for="option-a">A)  String</label> <br>
+        <input type="radio" id="option-b" name="mcqs2" value="b">
+        <label for="option-b">B)  Number</label> <br>
+        <input type="radio" id="option-c" name="mcqs2" value="c">
+        <label for="option-c">C) Boolean</label> <br>
+        <input type="radio" id="option-d" name="mcqs2" value="d">
+        <label for="option-d">D) All of the above</label> <br>
+    </div>
+    <button type="button" class="btn btn-primary" onclick="mcqs2();">Check Answer</button>
+    <br>
+    </div>
+
+
+    <div class="container my-5 text-black">
+    <div class="py-3 hidden" id="q3-hide">
+        <label for="mcqs3" class="form-lebel">3. Which method is used to add an element at the end of an array?</label><br><br>
+        <input type="radio" id="option-a" name="mcqs3" value="a">
+        <label for="option-a">A) shift();</label> <br>
+        <input type="radio" id="option-b" name="mcqs3" value="b">
+        <label for="option-b">B) unshift();</label> <br>
+        <input type="radio" id="option-c" name="mcqs3" value="c">
+        <label for="option-c">C) pop();</label> <br>
+        <input type="radio" id="option-d" name="mcqs3" value="d">
+        <label for="option-d">D) push()</label> <br>
+    </div>
+    <button type="button" class="btn btn-primary" onclick="mcqs3();">Check Answer</button>
+    <br>
+    </div>
+    
+    <div class="container my-5 text-black">
+    <div class="py-3 hidden" id="q4-hide">
+        <label for="mcqs4" class="form-lebel"> 4. What does the === operator in JavaScript compare?
+        </label><br><br>
+        <input type="radio" id="option-a" name="mcqs4" value="a">
+        <label for="option-a">A) Value only</label> <br>
+        <input type="radio" id="option-b" name="mcqs4" value="b">
+        <label for="option-b">B) Data type only</label> <br>
+        <input type="radio" id="option-c" name="mcqs4" value="c">
+        <label for="option-c">C)  Value and data type</label> <br>
+        <input type="radio" id="option-d" name="mcqs4" value="d">
+        <label for="option-d">D) Reference of variables</label> <br>
+    </div>
+    <button type="button" class="btn btn-primary" onclick="mcqs4();">Check Answer</button>
+    <br>
+    </div>
+
+    <div class="container my-5 text-black">
+    <div class="py-3 hidden" id="q5-hide">
+        <label for="mcqs5" class="form-lebel">5. How do you create a function in JavaScript?</label><br><br>
+        <input type="radio" id="option-a" name="mcqs5" value="a">
+        <label for="option-a">A) function myFunction() {}</label> <br>
+        <input type="radio" id="option-b" name="mcqs5" value="b">
+        <label for="option-b">B) def myFunction() {}</label> <br>
+        <input type="radio" id="option-c" name="mcqs5" value="c">
+        <label for="option-c">C) myFunction function() {} </label> <br>
+        <input type="radio" id="option-d" name="mcqs5" value="d">
+        <label for="option-d">D) var myFunction = function() {}</label> <br>
+    </div>
+    <button type="button" class="btn btn-primary" onclick="mcqs5();">Check Answer</button>
+    <button type="button" class="btn btn-primary" onclick="result();">Submit</button>
+    <div id="result" class="mx-auto ms-5 p-5" onclick="result();"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
